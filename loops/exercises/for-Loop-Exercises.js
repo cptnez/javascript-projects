@@ -66,4 +66,4 @@ Construct ``for`` loops to accomplish the following tasks:
 // }
 
 // console.log(evenArray);
-// console.log(oddArray);
+// console.log(oddArray):
