@@ -3,9 +3,30 @@ let arr = ['B', 'n', 'n', 5];
 
 //1) Use the split method on the string to identify the purpose of the parameter inside the ().
 
-//2) Use the join method on the array to identify the purpose of the parameter inside the ().
+// let newStr = str.split(" ")
+// console.log(newStr);
 
-//3) Do split or join change the original string/array?
+// 2) Use the join method on the array to identify the purpose of the parameter inside the ().
+
+// let newStr2 = arr.join('5');
+// console.log(newStr2);
+
+// 3) Do split or join change the original string/array?
+
+// No it does not!
+
+// console.log(str);
+// console.log(arr);
 
 //4) We can take a comma-separated string and convert it into a modifiable array. Try it! Alphabetize the cargoHold string, and then combine the contents into a new string.
 let cargoHold = "water,space suits,food,plasma sword,batteries";
+
+
+console.log(cargoHold.split(',').sort().join(','));
+
+// newArr = cargoHold.split(",");
+// console.log(newArr);
+// newArr.sort();
+// console.log(newArr);
+// newArr.join("5");
+// console.log(newArr);
