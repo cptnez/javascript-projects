@@ -42,7 +42,7 @@ let otherNonSuspiciousFunction = function(f) {
 let fuelLevel = 200000;
 let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold', 'water', 'AE-35 unit'];
 
-let irs = function (a,b) {
+let irs = function(levelOfFuel, itemsInCargo) {
   return console.log(`Raided ${nonSuspiciousFunction(fuelLevel)}kg of fuel from the tanks, and stole ${holdingCell[0]} and ${holdingCell[1]} from the cargo hold.`)
 }
 
