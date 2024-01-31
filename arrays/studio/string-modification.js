@@ -23,6 +23,5 @@ if (userInput > str.length) {
     console.log(`Opps! Your selection of ${userInput} has been changed to 3.`);
  }
 
-
-
+console.log(`The answer is ${thirdStr}.`);
 console.log(`The answer is ${thirdStr}.`);

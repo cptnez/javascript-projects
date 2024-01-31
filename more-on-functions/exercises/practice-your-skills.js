@@ -46,3 +46,4 @@ let arr = ['Elocution', 21, 'Clean teeth', 100];
 let pirateVer2 = arr.map(pirateVer1);
 
 console.log(pirateVer2)
+console.log(pirateVer2)
