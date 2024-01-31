@@ -6,10 +6,29 @@ function randomSelection(arr){
  let happiness = ['Hope', 'Joy', 'Peace', 'Love', 'Kindness', 'Puppies', 'Kittens', 'Tortoise'];
  
  let words = ['Hello', 'World', 'Python', 'JavaScript', 'Rutabaga'];
+
+ let arrOfTwo = [ ['Hope', 'Joy', 'Peace', 'Love', 'Kindness', 'Puppies', 'Kittens', 'Tortoise'], ['Hello', 'World', 'Python', 'JavaScript', 'Rutabaga']];
  
- for (i=0; i < 8; i++){
-   console.log(randomSelection(happiness));
- }
+// PART 2
+// function random2(arr) {
+//   let newArr = [];
+//   let oldArr = randomSelection(arr);
+//   for (let i = 0; i < 2; i++) {
+//    newArr.push(randomSelection(oldArr));
+//   }
+//   return newArr;
+// }
+// console.log(random2(arrOfTwo));
+
+// PART 3
+function random3(arr) {
+  let newArr = [];
+  for (let i = 0; i < 2; i++) {
+   newArr.push(randomSelection(randomSelection(arr)));
+  }
+  return newArr;
+}
+// console.log(random3(arrOfTwo));
  
  //Experiment with the code above. Try to:
  //a) Print 3 random selections from each array.
