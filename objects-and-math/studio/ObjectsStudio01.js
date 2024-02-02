@@ -1,8 +1,25 @@
 // Code your selectRandomEntry function here:
+function selectRandomEntry (arr) {
 
+  let randomIndex = Math.floor(Math.random()*arr.length);
+     randomSelection.push(arr[randomIndex]);
+    //  if (!randomSelection.includes(selection[randomIndex])) {
+    //   randomSelection.push(arr[randomIndex]);
+   return randomSelection;
+}
+
+let randomSelection = [];
 
 // Code your buildCrewArray function here:
-
+function buildCrewArray (ids, candidates) {
+  let crew = []
+  for (candidate of candidates) {
+    if (ids.includes(candidate.astronautID)) {
+      crew.push(candidate);
+    }
+  }
+  return crew;
+}
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
 

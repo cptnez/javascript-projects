@@ -1,8 +1,16 @@
 // Code your orbitCircumference function here:
-
+let circumference;
+function orbitCircumference(radius) {
+  return 2 * Math.PI * radius
+}
 
 // Code your missionDuration function here:
+let orbitalRadius = 2000;
+let orbitalSpeed = 28000;
 
+function missionDuration(numberOfOrbits, orbitalRadius, orbitalSpeed) {
+  return ((orbitalRadius / orbitalSpeed)*numberOfOrbits) / 24 + ' ' + 'days';
+}
 
 // Copy/paste your selectRandomEntry function here:
 
@@ -56,3 +64,4 @@ let candidateA = {
  
  let crew = [candidateA,candidateC,candidateE];
  
+ console.log(missionDuration(6, 28000, 2000));
